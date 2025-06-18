@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+// .josefin-sans-<uniquifier> {
+//   font-family: "Josefin Sans", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>;
+//   font-style: normal;
+// }
+
+//  font-family: "Josefin Sans", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>;
+//   font-style: normal;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  // Navigation Bar
+  .navigation {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    height: 5rem;
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      padding: 0.5rem;
+      list-style: none;
+      width: 50vw;
+      justify-content: space-around;
+      li {
+        cursor: pointer;
+        .listItems {
+          text-decoration: none;
+          color: black;
+          padding:0.7rem;
+          transition:0.5s;
+          &:hover{
+             cursor: pointer;
+        color: white;
+        text-decoration: none;
+        background: rgb(54, 54, 54);
+        border: none;
+        border-radius: 13%;
+        outline: none;
+        box-shadow: none;
+          }
+        }
+      }
+      .button {
+        cursor: pointer;
+        color: white;
+        padding: 0.7rem;
+        text-decoration: none;
+        background: black;
+        border: none;
+        border-radius: 13%;
+        outline: none;
+        box-shadow: none;
+        &:hover {
+          background-color: rgb(54, 54, 54);
+        }
+      }
+    }
+  }
+
+  // Layout Page Section
+  .page {
+    overflow-x: hidden;
+    height: 100vh;
+    background: url("./Images/27272.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  ///// Regsiter Form Section /////
+  .registerForm {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .formContainer {
+      width: 30rem;
+      position: relative;
+      height: 30rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 1rem;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      .closeButton {
+        border: none;
+        padding: 0 0.5rem;
+        font-size: 1.4rem;
+        outline: none;
+        box-shadow: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+      }
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        input {
+          margin-bottom: 1rem;
+          padding: 0.5rem;
+          border-radius: 0.5rem;
+          border: none;
+          outline: none;
+          font-size: 1rem;
+        }
+        button {
+          padding: 0.5rem;
+          border-radius: 0.5rem;
+          border: none;
+          outline: none;
+          background-color: black;
+          color: white;
+          cursor: pointer;
+          &:hover {
+            background-color: #333333;
+          }
+        }
+      }
+      .loginLink {
+        padding: 0.5rem;
+      }
+    }
+  }
+  // homePage hero container
+  .heroContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .text {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      font-size: 1.6rem;
+      width: 50vw;
+      color: black;
+      text-align: center;
+      .createResumeButton {
+        button {
+          border: None;
+          background-color: black;
+          color: white;
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 700;
+          font-size: 1.2rem;
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(54, 54, 54);
+          }
+          outline: none;
+          margin-top: 1rem;
+          border-radius: 1rem;
+          padding: 1.2rem;
+        }
+      }
+    }
+    .image {
+      width: 30vw;
+      .heroImage {
+        width: 100%;
+      }
+    }
+  }
+  .inputContainer{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    font-family: "Inter", sans-serif;
+    font-size:1.3rem;
+    font-weight:bold;
+    margin:1rem;
+    color:rgb(50, 50, 50);
+    label{
+      // margin-right:2.5rem;
+      background-color: transparent;
+    }
+    input{
+      outline:none;
+      box-shadow: none;
+      height:2.5rem;
+
+    }
+  }
+  .editResume{
+    display:flex;
+    justify-content: space-around;
+    .editResumeForm{
+      background-color: rgba(255, 255, 255,0.78);  
+      width:50vw;
+      display:flex;
+      padding:10rem;
+      flex-direction:column;
+      }
+    .liveResume{
+      width:50vw;
+    }
+  }
+}
